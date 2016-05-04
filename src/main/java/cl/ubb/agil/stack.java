@@ -2,7 +2,7 @@ package cl.ubb.agil;
 
 public class stack {
 	private int tamaño=0;
-	private int ultimoNumero;
+	private int ultimoNumero=0;
 	private int[] pila={};
 	public stack(){
 		

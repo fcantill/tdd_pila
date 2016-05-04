@@ -49,7 +49,7 @@ public class testStack {
 		assertEquals(a, 2);
 	}
 	@Test
-	public void retornaUno(){
+	public void agregaUnoRetornaUno(){
 		stack stack = new stack();
 	
 		stack.agregarNumeros(1);
@@ -58,6 +58,18 @@ public class testStack {
 		
 		
 		assertEquals(a, 1);
+	}
+	@Test
+	public void agregaUnoYDosYRetornaDos(){
+		stack stack = new stack();
+	
+		stack.agregarNumeros(1);
+		stack.agregarNumeros(2);
+		
+		int a = stack.hacerPop();
+		
+		
+		assertEquals(a, 2);
 	}
 
 }
