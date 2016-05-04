@@ -49,7 +49,7 @@ public class testStack {
 		assertEquals(a, 2);
 	}
 	@Test
-	public void agregaUnoRetornaUno(){
+	public void agregaUnoRetornaUno()throws Exception{
 		stack stack = new stack();
 	
 		stack.agregarNumeros(1);
@@ -60,7 +60,7 @@ public class testStack {
 		assertEquals(a, 1);
 	}
 	@Test
-	public void agregaUnoYDosYRetornaDos(){
+	public void agregaUnoYDosYRetornaDos() throws Exception{
 		stack stack = new stack();
 	
 		stack.agregarNumeros(1);
@@ -72,7 +72,7 @@ public class testStack {
 		assertEquals(a, 2);
 	}
 	@Test
-	public void retornaCuatroYTres(){
+	public void retornaCuatroYTres() throws Exception{
 		stack stack = new stack();
 	
 		stack.agregarNumeros(3);
@@ -84,6 +84,13 @@ public class testStack {
 		
 		assertEquals(a, 4);
 		assertEquals(b, 3);
+		
+	}@Test(expected = ExcepcionPilaVacia.class)
+	public void popDevuelveException() throws Exception{
+		stack stack = new stack();
+		
+		stack.hacerPop();
+		
 	}
 	
 

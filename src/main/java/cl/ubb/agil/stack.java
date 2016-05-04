@@ -22,10 +22,13 @@ public class stack {
 		return tamaño;
 	}
 	
-	public int hacerPop(){
-		
-		int a= pila[tamaño-1];
-		tamaño=tamaño-1;
-		return a;
+	public int hacerPop() throws ExcepcionPilaVacia{
+		if(tamaño == 0){
+			throw new ExcepcionPilaVacia();
+		}else{
+			int a= pila[tamaño-1];
+			tamaño=tamaño-1;
+			return a;
+		}
 	}
 }
