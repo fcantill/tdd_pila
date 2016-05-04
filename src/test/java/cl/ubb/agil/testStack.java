@@ -11,9 +11,21 @@ public class testStack {
 	public void pilaVacia(){
 		stack stack = new stack();
 	
-		int[] pila = stack.pilaLifo();
+		boolean a = stack.pilaVacia();
 		
-		assertEquals(pila.length,0);
+		
+		assertEquals(a, true);
 	}
+	@Test
+	public void pilaConUnNumero(){
+		stack stack = new stack();
+	
+		stack.agregarNumeros(1);
+		boolean a = stack.pilaVacia();
+		
+		
+		assertEquals(a, false);
+	}
+	
 
 }
