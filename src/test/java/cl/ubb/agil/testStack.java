@@ -26,6 +26,16 @@ public class testStack {
 		
 		assertEquals(a, false);
 	}
+	@Test
+	public void pilaConDosNumeros(){
+		stack stack = new stack();
 	
+		stack.agregarNumeros(1);
+		stack.agregarNumeros(2);
+		boolean a = stack.pilaVacia();
+		
+		
+		assertEquals(a, false);
+	}
 
 }
