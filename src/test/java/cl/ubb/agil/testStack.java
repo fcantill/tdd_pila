@@ -48,5 +48,16 @@ public class testStack {
 		
 		assertEquals(a, 2);
 	}
+	@Test
+	public void retornaUno(){
+		stack stack = new stack();
+	
+		stack.agregarNumeros(1);
+		
+		int a = stack.hacerPop();
+		
+		
+		assertEquals(a, 1);
+	}
 
 }
