@@ -37,5 +37,16 @@ public class testStack {
 		
 		assertEquals(a, false);
 	}
+	@Test
+	public void pilaConDosNumerosRetornaTamaño(){
+		stack stack = new stack();
+	
+		stack.agregarNumeros(1);
+		stack.agregarNumeros(2);
+		
+		int a= stack.retornaTamanio();
+		
+		assertEquals(a, 2);
+	}
 
 }

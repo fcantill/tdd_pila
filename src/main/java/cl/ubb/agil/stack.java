@@ -17,4 +17,7 @@ public class stack {
 	public void agregarNumeros(int numero){
 		tamaño++;
 	}
+	public int retornaTamanio(){
+		return tamaño;
+	}
 }
