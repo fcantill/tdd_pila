@@ -2,8 +2,7 @@ package cl.ubb.agil;
 
 public class stack {
 	private int tamaño=0;
-	private int ultimoNumero=0;
-	private int[] pila={};
+	private int[] pila=new int[2];
 	public stack(){
 		
 	}
@@ -17,13 +16,16 @@ public class stack {
 	}
 	public void agregarNumeros(int numero){
 		tamaño++;
-		ultimoNumero=numero;
+		pila[tamaño-1]=numero;
 	}
 	public int retornaTamanio(){
 		return tamaño;
 	}
 	
 	public int hacerPop(){
-		return ultimoNumero;
+		
+		int a= pila[tamaño-1];
+		tamaño=tamaño-1;
+		return a;
 	}
 }

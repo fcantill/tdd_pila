@@ -71,5 +71,20 @@ public class testStack {
 		
 		assertEquals(a, 2);
 	}
+	@Test
+	public void retornaCuatroYTres(){
+		stack stack = new stack();
+	
+		stack.agregarNumeros(3);
+		stack.agregarNumeros(4);
+		
+		int a = stack.hacerPop();
+		int b = stack.hacerPop();
+		
+		
+		assertEquals(a, 4);
+		assertEquals(b, 3);
+	}
+	
 
 }
